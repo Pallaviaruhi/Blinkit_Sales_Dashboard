@@ -17,12 +17,12 @@ step 6 : Create a matrics to insert a proper slicer for whole dashboard that inc
 
 for creating new matrix following DAX expression was written;
 
-   Metrics = {
-("Total Sales", NAMEOF('BlinkIT Grocery Data'[Total Sales]), 0),
-("Avg Sales", NAMEOF('BlinkIT Grocery Data'[Avg Sales]), 1),
-("Avg Rating", NAMEOF('BlinkIT Grocery Data'[Avg Rating]), 2),
-("No of Items", NAMEOF('BlinkIT Grocery Data'[No of Items]), 3)
-}
+     Metrics = {
+    ("Total Sales", NAMEOF('BlinkIT Grocery Data'[Total Sales]), 0),
+    ("Avg Sales", NAMEOF('BlinkIT Grocery Data'[Avg Sales]), 1),
+    ("Avg Rating", NAMEOF('BlinkIT Grocery Data'[Avg Rating]), 2),
+    ("No of Items", NAMEOF('BlinkIT Grocery Data'[No of Items]), 3)
+    }
 
 Step 7 : New measure was created to find total revenue.
 Following DAX expression was written for the same,
@@ -46,9 +46,12 @@ A card visual was used to represent this average rating.
 
 
 Step 10 : New measure was created to find out total number of items
+Following DAX expression was written to find total distance,
 
-  No of Items = COUNTROWS('BlinkIT Grocery Data')
+     No of Items = COUNTROWS('BlinkIT Grocery Data')
+A card visual was used to represent this average rating.
 
+---
 
 ## Insights
 A single page report was created on Power BI Desktop.
@@ -56,38 +59,33 @@ A single page report was created on Power BI Desktop.
 Following inferences can be drawn from the dashboard;
 
 ### [1] Total Number of Sales = $1.20M
-Highest number of Sales = Fruits & Vegetables ($178.12K)
+  Highest number of Sales = Fruits & Vegetables ($178.12K)
 
-Lowest number of Sales = Seafoods ($9.08K)
+  Lowest number of Sales = Seafoods ($9.08K)
 
-Highest number of Sales by outlet size = Medium size($507.9K)
+  Highest number of Sales by outlet size = Medium size($507.9K)
 
-Lowset number of Sales by outlet size = High ($248.99K)
+  Lowset number of Sales by outlet size = High ($248.99K)
 
 ### [2] Average Ratings
-a) Meat - 4.0/5
-b) Fruits & Vegetables - 3.91/5
-c) Hpousehold - 3.95/5
-d) Health & Hygiene - 3.93/5
-e) Soft Drinks - 3.89/5
-f) Hard Drinks - 3.84/5
-g) Baking Goods - 3.95/5
-h) Frozen Foods - 3.93/5
-i) Dairy - 3.92/5
-j) Seafood - 3.91/5
-k) Starchy Foods - 3.91/5
-l) Breads - 3.83/5
-m) Breakfast - 3.90/5
-n) Snack Foods - 3.90/5
-o) Canned - 3.95/5
-p) Others - 3.93/5
+    Average Rating: 3.9/5
+
+#### Top categories:
+
+      Meat – 4.0
+
+      Household – 3.95
+
+      Canned, Baking Goods – 3.95
+
+      Hard Drinks, Breads – 3.83–3.84
 while calculating average rating, null values have been ignored as they were not relevant for some customers.
 
 These ratings will change if different visual filters will be applied.
 
 ### [3] Some other insights
-Total 8523 items sold by different outlets at different location.​
+  Total 8523 items sold by different outlets at different location.​
 
-Items with Low fat content have the highest sales of 776.32K compared to regular fat i.e., 425.36K.​
+  Items with Low fat content have the highest sales of 776.32K compared to regular fat i.e., 425.36K.​
 
-Data reveals that sales reached their peak in 2018, highlighting it as the highest-performing year in terms of revenue generation.​
+  Data reveals that sales reached their peak in 2018, highlighting it as the highest-performing year in terms of revenue generation.​
